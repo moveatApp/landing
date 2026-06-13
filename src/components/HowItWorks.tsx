@@ -278,15 +278,12 @@ export default function HowItWorks() {
                         </div>
                      </div>
 
-                      {/* Product Demo Video */}
+                      {/* Mascot */}
                       <div className="lg:col-span-6 w-full flex justify-center">
-                         <video
-                            src="/demo.webm"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="h-[28rem] sm:h-[32rem] w-auto object-contain"
+                         <img
+                            src="/palti/standing.png"
+                            alt="Palti - Mascota de Moveat"
+                            className="h-[28rem] sm:h-[32rem] w-auto object-contain drop-shadow-[0_20px_40px_rgba(255,90,31,0.25)]"
                          />
                       </div>
                   </div>

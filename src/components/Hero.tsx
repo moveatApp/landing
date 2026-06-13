@@ -5,7 +5,7 @@ import { ArrowDown, Sparkles } from "lucide-react"
 
 export default function Hero() {
    const sectionRef = useRef<HTMLElement>(null)
-   const videoRef = useRef<HTMLVideoElement>(null)
+   const mascotRef = useRef<HTMLImageElement>(null)
    const headlineRef = useRef<HTMLHeadingElement>(null)
    const subheadRef = useRef<HTMLParagraphElement>(null)
    const ctaRef = useRef<HTMLDivElement>(null)
@@ -16,14 +16,14 @@ export default function Hero() {
          const ctx = gsap.context(() => {
             const tl = gsap.timeline({ defaults: { ease: "power3.out" } })
 
-            // Video entrance
-            tl.from(videoRef.current, {
-               scale: 0.8,
-               opacity: 0,
-               y: 40,
-               duration: 1,
-               ease: "back.out(1.7)",
-            })
+             // Mascot entrance
+             tl.from(mascotRef.current, {
+                scale: 0.8,
+                opacity: 0,
+                y: 40,
+                duration: 1,
+                ease: "back.out(1.7)",
+             })
 
             // Badge
             tl.from(
@@ -167,18 +167,15 @@ export default function Hero() {
                   </div>
                </div>
 
-               {/* Product Render */}
-               <div className="lg:col-span-5 flex justify-center items-center w-full">
-                  <video
-                     ref={videoRef}
-                     src="/demo.webm"
-                     autoPlay
-                     muted
-                     loop
-                     playsInline
-                     className="h-[28rem] sm:h-[32rem] w-auto object-contain"
-                  />
-               </div>
+                {/* Mascot */}
+                <div className="lg:col-span-5 flex justify-center items-center w-full">
+                   <img
+                      ref={mascotRef}
+                      src="/palti/saludando.png"
+                      alt="Palti - Mascota de Moveat"
+                      className="h-[28rem] sm:h-[32rem] w-auto object-contain drop-shadow-[0_20px_40px_rgba(255,90,31,0.25)]"
+                   />
+                </div>
             </div>
          </div>
 
