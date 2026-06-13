@@ -59,12 +59,8 @@ export default function CTA() {
       ref={sectionRef}
       className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto overflow-hidden z-10"
     >
-      <div className="bg-gradient-to-br from-brand-orange via-[#E03E00] to-brand-green rounded-[32px] border border-white/10 shadow-[0_30px_80px_rgba(255,90,31,0.18)] p-8 sm:p-12 md:p-16 relative overflow-hidden">
-        {/* Glow Effects inside card */}
-        <div className="absolute inset-0 opacity-15">
-          <div className="absolute top-10 left-10 w-80 h-80 bg-white rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl pointer-events-none" />
-        </div>
+      <div className="bg-transparent rounded-[32px] p-8 sm:p-12 md:p-16 relative overflow-hidden">
+        {/* Glow Effects inside card removed */}
 
         <div className="relative z-10 text-center">
           <div className="flex justify-center mb-6">
@@ -107,11 +103,7 @@ export default function CTA() {
 
           <div className="cta-item flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('¡Gracias por tu interés! Pronto nos pondremos en contacto.');
-              }}
+              href="https://dashboard.mov-eat.app/onboarding"
               className="bg-white text-brand-orange px-8 py-4 rounded-full text-base font-bold flex items-center justify-center gap-2 hover:shadow-xl hover:scale-105 active:scale-[0.98] transition-all w-full sm:w-auto"
             >
               Comenzar ahora

@@ -147,18 +147,12 @@ export default function Hero() {
                   <div
                      ref={ctaRef}
                      className="flex flex-col sm:flex-row items-center lg:justify-start justify-center gap-4">
-                     <a
-                        href="#cta"
-                        onClick={(e) => {
-                           e.preventDefault()
-                           document
-                              .querySelector("#cta")
-                              ?.scrollIntoView({ behavior: "smooth" })
-                        }}
-                        className="btn-primary w-full sm:w-auto px-8 py-4 rounded-full text-base font-bold flex items-center justify-center gap-2 active:scale-[0.98]">
-                        <Sparkles className="w-5 h-5" />
-                        Comenzar gratis por WhatsApp
-                     </a>
+                      <a
+                         href="https://dashboard.mov-eat.app/onboarding"
+                         className="btn-primary w-full sm:w-auto px-8 py-4 rounded-full text-base font-bold flex items-center justify-center gap-2 active:scale-[0.98]">
+                         <Sparkles className="w-5 h-5" />
+                         Comenzar gratis por WhatsApp
+                      </a>
                      <a
                         href="#how-it-works"
                         onClick={(e) => {

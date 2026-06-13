@@ -8,9 +8,9 @@ html {
 
 body {
   font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
-  color: #1E293B;
+  color: #F8FAF9;
   overflow-x: hidden;
-  background-color: #FAF9F6;
+  background-color: #0B0F19;
 }
 
 /* Subtle global noise overlay to break digital flatness */
@@ -108,12 +108,12 @@ p {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0F0E0C;
+  background: #0B0F19;
 }
 ::-webkit-scrollbar-thumb {
   background: #1E293B;
   border-radius: 5px;
-  border: 2px solid #0F0E0C;
+  border: 2px solid #0B0F19;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #FF5A1F;
