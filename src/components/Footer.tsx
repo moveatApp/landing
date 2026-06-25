@@ -7,7 +7,7 @@ const footerLinks = {
     { label: 'Precios', href: '#cta' },
   ],
   legal: [
-    { label: 'Privacidad', href: '#!' },
+    { label: 'Privacidad', href: '/privacy.html' },
     { label: 'Términos', href: '#!' },
     { label: 'Cookies', href: '#!' },
   ],
@@ -66,7 +66,9 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    onClick={(e) => e.preventDefault()}
+                    onClick={(e) => {
+                      if (link.href === '#!') e.preventDefault();
+                    }}
                     className="text-white/50 hover:text-brand-orange transition-colors text-sm"
                   >
                     {link.label}
